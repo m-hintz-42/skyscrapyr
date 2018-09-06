@@ -12,7 +12,7 @@ RUN cd app/skyscrapyr && \
 
 # Start scrapyrt server
 CMD cd app/skyscrapyr/coinmarketcap && \
-    scrapyrt -p 3000
+    scrapyrt -i 0.0.0.0 -p 3000
 
 EXPOSE 3000
 
