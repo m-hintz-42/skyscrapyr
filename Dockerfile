@@ -16,7 +16,7 @@ CMD cd app/skyscrapyr/coinmarketcap && \
 
 EXPOSE 3000
 
-RUN echo "skyscrapyr is running at http://localhost:3000/crawl.json?start_requests=true&spider_name=coin"
+RUN echo -e "skyscrapyr is running at \033[92mhttp://localhost:3000/crawl.json?start_requests=true&spider_name=coin\033[0m"
 ## Start Flask server
 #RUN cd app/sckyscrapyr && \
 #    export FLASK_APP=skyscrapyr && \
