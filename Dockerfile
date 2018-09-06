@@ -7,7 +7,7 @@ RUN mkdir app && \
     git clone https://github.com/m-hintz-42/skyscrapyr.git
 
 # Install requirements
-RUN cd app && \
+RUN cd app/skyscrapyr && \
     pip install -r requirements.txt
 
 # Start scrapyrt server
