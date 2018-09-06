@@ -12,8 +12,9 @@ RUN cd app/skyscrapyr && \
 
 # Start scrapyrt server
 RUN cd app/skyscrapyr/coinmarketcap && \
-    python -m scrapyrt -p 3000
+    scrapyrt -p 3000
 
+RUN echo "skyscrapyr is running at http://localhost:3000/crawl.json?start_requests=true&spider_name=coin"
 ## Start Flask server
 #RUN cd app/sckyscrapyr && \
 #    export FLASK_APP=skyscrapyr && \
