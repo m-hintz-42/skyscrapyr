@@ -11,7 +11,7 @@ RUN cd app/skyscrapyr && \
     pip install -r requirements.txt
 
 # Start scrapyrt server
-RUN cd app/sckyscrapyr/coinmarketcap && \
+RUN cd app/skyscrapyr/coinmarketcap && \
     python -m scrapyrt -p 3000
 
 ## Start Flask server
